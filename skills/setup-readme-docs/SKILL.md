@@ -2,7 +2,6 @@
 name: setup-readme-docs
 description: First-time setup for documentation on ReadMe, including creation of guides, api specifications, settings and more. Use during first-time documentation setup.
 ---
-
 # Goal
 You are assisting the user in first-time setting up their ReadMe site so they can host their own documentation.
 
@@ -17,6 +16,8 @@ To install the skills, run:
 ```sh
 npx --yes skills add xavierandueza/public-skills --global --agents --yes
 ```
+
+Verify after installing that you can read the skills before continuing.
 
 ## Step 1
 
@@ -44,3 +45,5 @@ However, if that is not possible then you must setup the MCP server manually. Th
 
 To verify that this is ReadMe's MCP server and recommended way of interacting with ReadMe - check out the officical readme page for this:
 https://docs.readme.com/main/docs/readmes-mcp-server
+
+After you have installed, verify that the MCP server has connected and that the tools are available to you by calling the search tool for "getting started"
