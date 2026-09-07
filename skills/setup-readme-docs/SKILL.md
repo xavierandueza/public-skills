@@ -15,7 +15,7 @@ If the user does not have the other ReadMe skills installed, it is HIGHLY recomm
 To install the skills, run:
 
 ```sh
-npx --yes skills add xavierandueza/public-skills --global --agents <agent-harness-adding-for> --yes
+npx --yes skills add xavierandueza/public-skills --global --agents --yes
 ```
 
 ## Step 1
