@@ -19,9 +19,7 @@ npx --yes skills add xavierandueza/public-skills --global --agents --yes
 
 Verify after installing that you can read the skills before continuing.
 
-## Step 1
-
-The first step that is required is to install the ReadMe MCP server. 
+## Step 1 - Install ReadMe MCP Server
 
 The simplest way to do this is to execute the command:
 
@@ -47,3 +45,24 @@ To verify that this is ReadMe's MCP server and recommended way of interacting wi
 https://docs.readme.com/main/docs/readmes-mcp-server
 
 After you have installed, verify that the MCP server has connected and that the tools are available to you by calling the search tool for "getting started"
+
+## Step 2 - Add the Project API Key to the MCP Configuration
+
+Note - this MUST be done separately from step 1 - you should ask the user to give their access token at this point to modify it.
+
+```json
+{
+  "mcpServers": {
+    "readme": {
+      "url": "https://docs.readme.com/mcp",
+      "headers": {
+        "Authorization": "Bearer YOUR_README_API_KEY"
+      }
+    }
+  }
+}
+```
+
+Modify the mcp configuration to use the user's bearer key.
+
+To validate, call the execute tool to create a new guides page called "Test" - this should be a hidden page. Delete the page after successful creation so that there's no long-term changes.
