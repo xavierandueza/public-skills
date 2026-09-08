@@ -11,10 +11,10 @@ The repository https://github.com/xavierandueza/public-skills contains skills th
 
 If the user does not have the other ReadMe skills installed, it is HIGHLY recommended that you install these skills before moving forward with other steps, as they will be referenced here.
 
-To install the skills, run:
+To install the skills, run, with the specific agent harness you are in (ie claude code, codex, etc):
 
 ```sh
-npx --yes skills add xavierandueza/public-skills --global --agents --yes
+npx --yes skills add xavierandueza/public-skills --global --agents <your-agent-harness> --yes
 ```
 
 Verify after installing that you can read the skills before continuing.
